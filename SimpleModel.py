@@ -8,19 +8,19 @@ def SimpleModel(instance_shape,bag_size):
 
     # Extract features from inputs.
     inputs, embeddings = [], []
-    conv1_1 = Conv2D(16, kernel_size=(2,2), activation='relu') #16
-    conv1_2 = Conv2D(16, kernel_size=(2,2), activation='relu')  #16
+    conv1_1 = Conv2D(16, kernel_size=(2,2), activation='relu') 
+    conv1_2 = Conv2D(16, kernel_size=(2,2), activation='relu')  
     mpool_1 = MaxPooling2D((2,2))
 
-    conv2_1 = Conv2D(32, kernel_size=(2,2),   activation='relu')  #32
-    conv2_2 = Conv2D(32, kernel_size=(2,2),activation='relu') #32
+    conv2_1 = Conv2D(32, kernel_size=(2,2),   activation='relu')  
+    conv2_2 = Conv2D(32, kernel_size=(2,2),activation='relu') 
     mpool_2 = MaxPooling2D((2,2))
 
     
 
 
-    fc0 = Dense(512, activation='relu', name='fc0') # 512
-    fc1 = Dense(512, activation='relu', name='fc1') # 512
+    fc0 = Dense(512, activation='relu', name='fc0') 
+    fc1 = Dense(512, activation='relu', name='fc1') 
     fc2 = Dense(256, activation= 'relu',  name='fc2')
   
    
@@ -52,7 +52,7 @@ def SimpleModel(instance_shape,bag_size):
     alpha = MILAttentionLayer(
         weight_params_dim=1024,
         kernel_regularizer=keras.regularizers.l2(0),# previous - 0.01
-        use_gated=True, # True
+        use_gated=True, 
         name="alpha",
     )(embeddings)
 
