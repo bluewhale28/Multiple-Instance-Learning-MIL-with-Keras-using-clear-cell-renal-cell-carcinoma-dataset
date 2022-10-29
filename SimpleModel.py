@@ -5,6 +5,15 @@ from keras.layers import Input, Dense, Layer, Dropout, Conv2D, MaxPooling2D, Fla
 from MILAttentionLayer import MILAttentionLayer
 
 def SimpleModel(instance_shape,bag_size):
+    """ Create Keras model for Multiply Instance Learning
+    Parameters
+    -------------------
+    instance_shape (tuple) - shape of 1 instance in the bag
+    bag_size (int) - size of the bag
+    Returns
+    -------------------
+     keras.Model
+    """
 
     # Extract features from inputs.
     inputs, embeddings = [], []
