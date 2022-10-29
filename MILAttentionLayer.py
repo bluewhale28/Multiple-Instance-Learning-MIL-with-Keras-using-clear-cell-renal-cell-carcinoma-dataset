@@ -3,7 +3,9 @@ from tensorflow import keras
 from tensorflow.keras import layers
 
 class MILAttentionLayer(layers.Layer):
-    """Implementation of the attention-based Deep MIL layer.
+    """ Implementation of the MIL layer from this article - https://keras.io/examples/vision/attention_mil_classification/
+    
+    Implementation of the attention-based Deep MIL layer.
 
     Args:
       weight_params_dim: Positive Integer. Dimension of the weight matrix.
