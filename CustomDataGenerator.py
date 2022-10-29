@@ -4,7 +4,21 @@ import pandas as pd
 import numpy as np
 
 class CustomDataGenerator(tf.keras.utils.Sequence):
-    
+    """ Create custom DataGenerator
+    Parameters
+    -------------------
+    df (pandas DataFrame) - DataFrame with the data. X (bag of instances) - list of images paths. y -label
+    batch_size (int) - size of batch
+    input_size (tuple) - size of input image
+    shuffle (boolean) - shuffle Dataframe after each epoch. Default - False
+    augmentations (boolean) - apply image augmentations state. Augmentations creates with albumentations library. Default - False
+    augmentations_list (list) - list of augmentations to perform
+    X_col_num (int) - num of X ( list of images paths) column
+    y_col_num (int) - num of y (label) column
+    Returns
+    -------------------
+     DataGenerator object
+    """
     def __init__(self, df, 
                  batch_size = 1,
                  input_size=(256, 256, 3),
