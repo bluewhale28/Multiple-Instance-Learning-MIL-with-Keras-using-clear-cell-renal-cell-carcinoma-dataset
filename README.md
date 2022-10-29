@@ -5,6 +5,10 @@ Medium - https://medium.com/@nik88888888888/multiple-instance-learning-mil-using
 
 ## Intro
 Taking into account the relevance of Multiple instance learning (MIL) and, in particular, the advantages of this method for the analysis of histological images, I decided to try to train models in order to classify bags of instances into those, that contain only normal tissues (negative class) and those, in which images are found with clear cell renal cell carcinoma (positive class).
+## Related articles
+1. Keras implementation of the MIL layer — https://keras.io/examples/vision/attention_mil_classification/
+
+   2 . Attention-based Deep Multiple Instance Learning for hostology images analysis — https://github.com/utayao/Atten_Deep_MIL
 ## Dataset
 Datasets containing 500, 1000 and 2000 bags of instances were used to train the models. The ratio of positive (containing images of clear cell renal cell carcinoma) to negative (containing only normal tissues) was 1:1. Each set contained 40 colorful .jpeg images with a resolution of 256x256 pixels, obtained from full-slide images from the CPTAC-CCRCC study (WSI is freely available on the Cancer Imaging Archive website). In the positive sets, 20 out of 40 images were with clear cell renal cell carcinoma.
 
@@ -24,4 +28,4 @@ Model structure - https://github.com/bluewhale28/Multiple-Instance-Learning-MIL-
 ![40_1](https://user-images.githubusercontent.com/55003096/198854392-8111b5f3-a7b5-4190-ba02-3c328a2f5ead.png)
 
 ## Contact
-email - nik88888888888@gmail.com
+If you have any questions my email - nik88888888888@gmail.com
