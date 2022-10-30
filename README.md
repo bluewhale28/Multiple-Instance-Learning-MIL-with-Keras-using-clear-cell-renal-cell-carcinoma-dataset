@@ -28,4 +28,4 @@ Model structure - https://github.com/bluewhale28/Multiple-Instance-Learning-MIL-
 ![40_1](https://user-images.githubusercontent.com/55003096/198854392-8111b5f3-a7b5-4190-ba02-3c328a2f5ead.png)
 
 ## Contact
-If you have any questions my email - nik88888888888@gmail.com
+If you have any questions, my email - nik88888888888@gmail.com
