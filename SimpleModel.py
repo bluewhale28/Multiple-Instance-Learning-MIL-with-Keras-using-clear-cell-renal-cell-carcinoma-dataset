@@ -25,9 +25,6 @@ def SimpleModel(instance_shape,bag_size):
     conv2_2 = Conv2D(32, kernel_size=(2,2),activation='relu') 
     mpool_2 = MaxPooling2D((2,2))
 
-    
-
-
     fc0 = Dense(512, activation='relu', name='fc0') 
     fc1 = Dense(512, activation='relu', name='fc1') 
     fc2 = Dense(256, activation= 'relu',  name='fc2')
@@ -52,9 +49,6 @@ def SimpleModel(instance_shape,bag_size):
         x = fc2(x)
         x = Dropout(0.2)(x)
         
-        
-
-
         embeddings.append(x)
 
     # Invoke the attention layer.
